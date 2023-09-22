@@ -6,6 +6,8 @@ are present on this page.
 
 ## Papers
 
+Usually the papers are not tested by using the traditional chinese character datasets, but the methods are still useful.
+
 | Title                                                                                                                | Venue | Year | PDF                                                                    | CODE                                                                |
 | -------------------------------------------------------------------------------------------------------------------- | ----- | ---- | ---------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | A Handwritten Chinese Text Recognizer Applying Multi-level Multimodal Fusion Network                                 | ICDAR | 2019 | [Link](https://ieeexplore.ieee.org/abstract/document/8978158)          |                                                                     |
@@ -14,14 +16,9 @@ are present on this page.
 | Decoupled Attention Network for Text Recognition                                                                     | AAAI  | 2020 | [Link](https://arxiv.org/abs/1912.10205)                               | [Link](https://github.com/Wang-Tianwei/Decoupled-attention-network) |
 | Towards fast, accurate and compact online handwritten Chinese text recognition                                       | ICDAR | 2021 | [Link](https://link.springer.com/chapter/10.1007/978-3-030-86334-0_11) |                                                                     |
 | Searching from the prediction of visual and language model for handwritten Chinese text recognition                  | ICDAR | 2021 | [Link](https://link.springer.com/chapter/10.1007/978-3-030-86334-0_18) |                                                                     |
-| Decoupled Attention Network for Text Recognition                                                                     | AAAI  | 2020 | [Link](https://arxiv.org/abs/1912.10205)                               | [Link](https://github.com/Wang-Tianwei/Decoupled-attention-network) |
 | Recognition of Handwritten Chinese Text by Segmentation: A Segment-Annotation-Free Approach                          | TMM   | 2022 | [Link](https://ieeexplore.ieee.org/abstract/document/9695187)          |                                                                     |
 
-## Codes & Frameworks
-
 ## Datasets
-
-Most of the traditional chinese character recognition method usually conduct experiments on the datasets down below.
 
 ### TKH and MTH
 
@@ -31,12 +28,12 @@ The datasets contain scanned Tripitaka images with ground truth labels, includin
 
 #### Datasets Information
 
-|                      | TKH     | MTH     |
-| -------------------- | ------- | ------- |
-| Pages                | 1,000   | 500     |
-| Lines                | 23,471  | 17,178  |
+|                      |   TKH   |   MTH   |
+| :------------------: | :-----: | :-----: |
+|        Pages         |  1,000  |   500   |
+|        Lines         | 23,471  | 17,178  |
 | Character instances  | 323,491 | 197,886 |
-| Character categories | 1,471   | 3,664   |
+| Character categories |  1,471  |  3,664  |
 
 #### Datasets Samples
 
@@ -83,19 +80,59 @@ test set: consists of in total 1,135 images selected from 12 separate books,
 ![](imgs/Examples_of_ICDAR_2019_HDRC_datasets.png)
 
 Download Link: https://tc11.cvc.uab.es/datasets/ICDAR2019HDRC_1
+
 Ground Truth Download Link: https://tc11.cvc.uab.es/datasets/ICDAR2019HDRC_1/gt_1_1
 
-### 古籍文档图像分析与识别数据集
+### Synthetic datasets
 
-Introduced by "粤港澳大湾区（黄埔）国际算法算例大赛-古籍文档图像识别与分析算法比赛" as the competition dataset.
+Because of the characters long tail distribution problem, there is a strong demand to generate the less common characters,
+which can be used to balance the characters samples.
 
-#### Dataset Information
+#### Isolated Characters Datasets
 
-#### Dataset Samples
+1. CASIA-HWDB1.X
 
-![](imgs/Examples_of_古籍文档图像分析与识别数据集.png)
+Download Link: http://www.nlpr.ia.ac.cn/databases/handwriting/Download.html
 
-## Talks
+| Datasets | Writers | Chinese Characters Classes | Chinese Character Instances |
+| :------- | :-----: | :------------------------: | :-------------------------: |
+| HWDB1.0  |   420   |           3,866            |          1,609,136          |
+| HWDB1.1  |   300   |           3,755            |          1,121,749          |
+| HWDB1.2  |   300   |           3,319            |           990,989           |
+| Total    |  1020   |           7,185            |          3,721,874          |
+
+2. CASIA-AHCDB
+
+Download Link: http://www.nlpr.ia.ac.cn/pal/CASIA-AHCDB.html
+
+| Datasets         | Chinese Characters Classes | Chinese Character Instances |
+| :--------------- | :------------------------: | :-------------------------: |
+| Style 1 Base     |           2,365            |          1,087,101          |
+| Style 1 Enhanced |           3,227            |           125,462           |
+| Style 2 Base     |           2,365            |           932,970           |
+| Style 2 Enhanced |            783             |           90,776            |
+| Total            |           12,229           |          2,264,285          |
+
+3. Cursive Chinese Calligraphy Dataset
+
+Download Link: https://github.com/nccuviplab/CursiveChineseCalligraphyDataset
+
+> Note:
+> the training set includes image from augmentation
+
+| Datasets   | Chinese Characters Classes | Chinese Character Instances |
+| :--------- | :------------------------: | :-------------------------: |
+| Training   |           5,301            |           655,892           |
+| Validation |           5,301            |            7,724            |
+| Testing    |           5,301            |            9,548            |
+| Total      |           5,301            |           673,164           |
+
+#### Synthetic Data Generator
+
+1. [TextRecognitionGenerator](https://github.com/Belval/TextRecognitionDataGenerator)
+2. [PaddleOCR/StyleText](https://github.com/PaddlePaddle/PaddleOCR)
+3. [chinese-image-generator](https://github.com/junwenzhu/chinese-image-generator)
+
 
 ## Competitions
 
