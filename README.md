@@ -60,6 +60,7 @@ The dataset was built by annotating 11,937 pages of Chinese ancient handwritten 
 ![](imgs/Examples_of_CASIA_AHCDB_Datasets.png)
 
 Download Link: http://www.nlpr.ia.ac.cn/pal/CASIA-AHCDB.html
+
 Extract Link(**Not official**): https://github.com/detachment8/CASIA-AHCDB-load
 
 
@@ -71,9 +72,9 @@ Introduced by Rajkumar Saini et al. in [ICDAR 2019 Historical Document Reading C
 
 The dataset is provided by [FamilySearch](https://www.familysearch.org/) and consists of the following collections:
 
-training set: consists of in total 11,715 images selected from another set of 37 separate books.
+Training set: consists of in total 11,715 images selected from another set of 37 separate books.
 
-test set: consists of in total 1,135 images selected from 12 separate books,
+Testing set: consists of in total 1,135 images selected from 12 separate books,
 
 #### Dataset Samples
 
@@ -164,3 +165,5 @@ Datasets Download Link: https://tc11.cvc.uab.es/datasets/ICDAR2019HDRC_1
 > Perfect Match Ratio: 95%
 
 ## Acknowledgements
+
+This page is made [binglin qiu](https://github.com/M1andy), who are graduate students of Dalian University of Technology.
