@@ -144,10 +144,15 @@ Link: https://www.cvmart.net/race/10340/base
 Datasets Download Link: https://iacc.pazhoulab-huangpu.com/dataset/41.html
 
 > Highest Score 
+> 
 > Team: 大佬吃维C (SCUT-DLVClab)
+> 
 > Recognition Method: [Segmentation-Based](https://ieeexplore.ieee.org/abstract/document/9695187)
+> 
 > Recognition Accuracy: 91.43% 
+> 
 > Inference Speed: 505.61ms
+> 
 > Model Parameters: 187.76M
 
 ### ICDAR 2019 Historical Document Reading Challenge Task 1
@@ -157,11 +162,17 @@ Link: https://ieeexplore.ieee.org/document/8977999/footnotes#footnotes-id-fn1
 Datasets Download Link: https://tc11.cvc.uab.es/datasets/ICDAR2019HDRC_1
 
 > Highest Score 
+> 
 > Team: SCUT-DLVClab
+> 
 > Recognition Method: CRNN-based
+> 
 > Edit Distance:  2539
+> 
 > Perfect Match: 40517
+> 
 > Error Rate: 1%
+> 
 > Perfect Match Ratio: 95%
 
 ## Acknowledgements
